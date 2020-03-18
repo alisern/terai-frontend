@@ -9,11 +9,10 @@ import { Component, OnInit } from '@angular/core';
 export class MoreInfoComponent implements OnInit {
 
   constructor() { }
-
+  isCollapsed = true;
   ngOnInit(): void {
   }
 
 }
-export class CollapseDemoComponent {
-  isCollapsed = false;
-}
+
+
