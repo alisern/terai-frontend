@@ -35,14 +35,12 @@
 </div>
   
 <div class="bg-img2 container-fluid justify-content-center" *ngIf="showOne" #nextElement>
+   
+
 
 </div>
-
-<p>home-page works!</p>
-<a class="btn btn-primary" href="#" role="button">Link</a>
-
-<app-copyright *ngFor="let copyright of copyrightList"
-      [copyright]="copyright">
-    </app-copyright>
+<app-copyright *ngFor="let copyright of copyrightList | slice:0:copyrightLimit;"
+[copyright]="copyright">
+</app-copyright>
 
 

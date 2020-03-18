@@ -1,6 +1,5 @@
 
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import { Component, OnInit } from '@angular/core';
 import {Copyright} from '../copyright';
 import {copyrigthList} from './listOfItems'
 
@@ -21,7 +20,11 @@ export class HomePageComponent implements OnInit {
   
   showOne: boolean = false;
   showBlock: boolean = false;
-  ngOnInit() { }
+  copyrightLimit = 1;
+ 
+  ngOnInit() { 
+    this.copyrightList = copyrigthList;
+  }
 
 
    scroll() {
@@ -37,10 +40,7 @@ export class HomePageComponent implements OnInit {
     } 
   }
 
-  ngOnInit(): void {
-    console.log("asd");
-    this.copyrightList = copyrigthList;
-  }
+  
 
   
 }
