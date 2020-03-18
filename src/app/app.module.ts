@@ -6,17 +6,22 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { RegistrationFormComponent } from './registration-form/registration-form.component';
 import { MoreInfoComponent } from './more-info/more-info.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     RegistrationFormComponent,
-    MoreInfoComponent
+    MoreInfoComponent,
+   
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+     BrowserAnimationsModule,
+    CollapseModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

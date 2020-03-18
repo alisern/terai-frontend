@@ -14,3 +14,6 @@ export class MoreInfoComponent implements OnInit {
   }
 
 }
+export class CollapseDemoComponent {
+  isCollapsed = false;
+}
