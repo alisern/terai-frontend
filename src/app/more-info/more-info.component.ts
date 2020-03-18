@@ -11,8 +11,11 @@ export class MoreInfoComponent implements OnInit {
   constructor() { }
   isCollapsed = true;
   ngOnInit(): void {
+    
   }
 
+
+  
 }
 
 
