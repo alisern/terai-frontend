@@ -11,13 +11,15 @@ import { FormsModule } from '@angular/forms';
 import { TestComponent } from './test/test.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { LogInComponent } from './log-in/log-in.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     RegistrationFormComponent,
     CopyrightComponent,
-    TestComponent
+    TestComponent,
+    LogInComponent
   ],
   imports: [
     BrowserModule,
