@@ -1,0 +1,43 @@
+<div class=" form-group wrapper fadeInDown">
+    <div id="formContent">
+        <h1>Prisijungimas </h1>
+        <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+            <label for="loginUserEmail">El. paštas</label>
+            <input type="email"
+             name="useremail"
+              ngModel 
+              required 
+              #useremail="ngModel"
+               class="form-control"
+                id="loginUserEmail">
+            <label for="loginPassword">Slaptažodis</label>
+            <input type="password" 
+            name="password" 
+            ngModel
+             required 
+             #password="ngModel"
+              class="form-control"
+                id="loginPassword">
+            <button type="submit" [disabled]="f.invalid" class="fadeIn fourth">Prisijungti</button>
+        </form>
+        <div id="formFooter">
+            <a class="underlineHover" [routerLink]="['/reset-password']">Pamiršai slaptažodį?</a>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="wrapper fadeInDown">
+    <div id="formContent">
+        <h1>Prisijungimas </h1>
+        <form>
+            <input type="email" id="login" class="fadeIn second" name="login" placeholder="El. paštas">
+            <input type="password" id="password" class="fadeIn third" name="login" placeholder="Slaptažodis">
+            <input type="submit" class="fadeIn fourth" value="Prisijungti">
+        </form>
+
+        <div id="formFooter">
+            <a class="underlineHover" [routerLink]="['/reset-password']">Pamiršai slaptažodį?</a>
+        </div>
+
+    </div>
+</div> -->

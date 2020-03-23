@@ -11,22 +11,25 @@ import { FormsModule } from '@angular/forms';
 import { TestComponent } from './test/test.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
-import { LogInComponent } from './log-in/log-in.component';
+import { HttpClientModule } from '@angular/common/http'; 
+
+import { AuthModule } from './auth/auth.module';
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     RegistrationFormComponent,
     CopyrightComponent,
-    TestComponent,
-    LogInComponent
+    TestComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    CollapseModule.forRoot()
+    CollapseModule.forRoot(),
+    AuthModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
