@@ -6,6 +6,7 @@ import { TestComponent } from './test/test.component';
 import { LoginComponent } from './auth/components/login/login.component';
 import { ResetPasswordComponent } from './auth/components/reset-password/reset-password.component';
 import{RegisterComponent}from './auth/components/register/register.component';
+import { ChangePasswordComponent } from './auth/components/change-password/change-password.component';
 
 const routes: Routes = [
   {path: 'home', component: HomePageComponent},
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'register',component:RegisterComponent},
   {path:'reset-password',component:ResetPasswordComponent},
+  {path:'change-password',component:ChangePasswordComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', redirectTo: '/home'},
  

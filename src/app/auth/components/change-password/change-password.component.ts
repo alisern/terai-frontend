@@ -16,18 +16,18 @@ export class ChangePasswordComponent implements OnInit {
     this.model.token = this.route.snapshot.queryParamMap.get('token');
     this.model.userid = this.route.snapshot.queryParamMap.get('userid');
   }
-  // changePassword() {
+  changePassword() {
     
-  //   this.authService.changePassword(this.model).subscribe(() => {
+    this.authService.changePassword(this.model).subscribe(() => {
      
-  //     console.log("success");
+      console.log("success");
       
-  //   }, error => {
+    }, error => {
      
-  //     console.log(error);
+      console.log(error);
     
-  //   })
-  // }
+    })
+  }
 //   changePassword(){
 //     this.authService.changePassword(this.model).subscribe(() => {
 //        console.log("success");
