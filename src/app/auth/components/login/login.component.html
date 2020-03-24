@@ -3,20 +3,10 @@
         <h1>Prisijungimas </h1>
         <form #f="ngForm" (ngSubmit)="onSubmit(f)">
             <label for="loginUserEmail">El. paštas</label>
-            <input type="email"
-             name="useremail"
-              ngModel 
-              required 
-              #useremail="ngModel"
-               class="form-control"
+            <input type="email" name="useremail" ngModel required #useremail="ngModel" class="form-control"
                 id="loginUserEmail">
             <label for="loginPassword">Slaptažodis</label>
-            <input type="password" 
-            name="password" 
-            ngModel
-             required 
-             #password="ngModel"
-              class="form-control"
+            <input type="password" name="password" ngModel required #password="ngModel" class="form-control"
                 id="loginPassword">
             <button type="submit" [disabled]="f.invalid" class="fadeIn fourth">Prisijungti</button>
         </form>
